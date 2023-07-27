@@ -2,12 +2,12 @@ pipeline{
     agent any
     stages{
         stage('Running python code'){
-            step{
+            steps{
                 echo 'python3 main.py'
             }
         }
         stage('Making dockerfile'){
-            step{
+            steps{
                 echo 'dockerbuild -t .'
             }
         }
