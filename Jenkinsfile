@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Making dockerfile') {
             steps{
-                echo 'dockerbuild -t .'
+                echo 'dockerbuild -t xyz .'
             }
         }
     }
